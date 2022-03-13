@@ -37,8 +37,10 @@ const switchPlayer = function () {
 };
 
 const resetValues = function () {
-  document.getElementById(`score--${activePlayer}`).textContent = 0;
-  document.getElementById(`current--${activePlayer}`).textContent = 0;
+  document.getElementById(`score--0`).textContent = 0;
+  document.getElementById(`score--1`).textContent = 0;
+  document.getElementById(`current--0`).textContent = 0;
+  document.getElementById(`current--1`).textContent = 0;
   activePlayer = 0;
 };
 
