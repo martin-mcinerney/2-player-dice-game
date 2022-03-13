@@ -37,10 +37,10 @@ const switchPlayer = function () {
 };
 
 const resetValues = function () {
-  document.getElementById(`score--0`).textContent = 0;
-  document.getElementById(`score--1`).textContent = 0;
-  document.getElementById(`current--0`).textContent = 0;
-  document.getElementById(`current--1`).textContent = 0;
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
   activePlayer = 0;
 };
 
@@ -98,7 +98,7 @@ buttonNew.addEventListener('click', function () {
   removePlayerWinner();
   removePlayerActive();
   playing = true;
+  resetValues();
   document.querySelector(`.player--0`).classList.add('player--active');
   document.querySelector(`.player--1`).classList.remove('player--active');
-  resetValues();
 });
